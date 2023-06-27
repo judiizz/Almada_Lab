@@ -1,0 +1,79 @@
+---
+title: "CARC_onDemand_setup"
+output: html_notebook
+---
+
+This link is very helpful for all the setups:
+https://www.carc.usc.edu/user-information/user-guides/hpc-basics/getting-started-ondemand
+
+
+There will be four file systems:
+/home1
+/project/aealmada_561/
+/scratch1
+/scratch2
+
+The two scratch systems are intended for temporary files, need periodically backup.
+Better to do work under project folder.
+```{commands}
+# quick access scratch1 directory
+cds
+
+# quick access scratch2 directory
+cds2
+
+# to access the project directory
+cd /project/aealmada_561
+```
+
+
+Transferring files between your local machine and the server (Discovery)
+https://www.carc.usc.edu/user-information/user-guides/data-management
+operate on your terminal, not the server.
+sftp>   appeared means it's success!
+```{commands}
+# connect to the server
+
+Judys-MacBook-Pro:~ zhudifei$ sftp difeizhu@hpc-transfer1.usc.edu
+difeizhu@hpc-transfer1.usc.edu 's password: 
+(difeizhu@hpc-transfer1.usc.edu) Duo two-factor login for difeizhu
+
+Enter a passcode or select one of the following options:
+
+ 1. Duo Push to XXX-XXX-0871
+ 2. Duo Push to iOS
+ 3. Phone call to XXX-XXX-0871
+ 4. SMS passcodes to XXX-XXX-0871
+
+Passcode or option (1-4): 1
+Connected to hpc-transfer1.usc.edu.
+sftp> 
+```
+
+navigate locally: add a "l" in front of all the commands, means access locally
+```{commands}
+sftp> lpwd
+Local working directory: /Users/zhudifei/Desktop
+```
+
+navigate remotely: without "l", means access folders on the server
+```{commands}
+# cds and cds2 commands are not working here, need to use the full path
+sftp> pwd
+Remote working directory: /home1/difeizhu
+sftp> cd /scratch1/difeizhu
+sftp> pwd
+Remote working directory: /scratch1/difeizhu
+```
+
+transfer the files
+i transferred all the files needed for chipseq
+```{commands}
+# go inside the directory and find the files you want to upload
+sftp> lcd /Users/zhudifei/Desktop/Almada_lab/CLASS_2023-master/CLASSES/03_Nextflow
+# use put command, -r for transferring the directory
+sftp> put -r fastq
+```
+
+
+

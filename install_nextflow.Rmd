@@ -1,0 +1,85 @@
+---
+title: "installing_nextflow"
+output: html_notebook
+---
+
+The CARC server doesn't have nextflow
+This link is very helpful for installation: 
+https://www.nextflow.io/docs/latest/getstarted.html
+
+
+Check requirement for nextflow: java 11 or later is required
+the CARC server doesn't have java
+```{commands}
+# install java through SDKMAN
+curl -s "https://get.sdkman.io" | bash
+sdk install java 17.0.6-amzn
+```
+
+Install nextflow
+```{commands}
+# create a "bin" directory within your home directory
+mkdir bin
+cd bin
+
+# install nextflow
+curl -s https://get.nextflow.io | bash
+```
+
+Add nextflow to path
+```{commands}
+# check all the paths
+echo $PATH | tr ":" "\n"
+
+# will show these, make sure there is a line that says "/usr/bin"
+
+# /home1/difeizhu/.sdkman/candidates/java/current/bin
+# /spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/pmix-3.2.3-o4owkss/bin
+# /spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/openmpi-4.1.4-4w23jca/bin
+# /spack/2206/apps/linux-centos7-x86_64_v3/gcc-11.3.0/openblas-0.3.21-afcoykn/bin
+# /spack/apps/gcc/11.3.0/bin
+# /spack/utilities
+# /usr/local/bin
+# /usr/bin
+# /usr/local/sbin
+# /usr/sbin
+# /home1/difeizhu/.local/bin
+# /home1/difeizhu/bin
+
+```
+
+Now add nextflow to our .profile file
+the .profile is loaded each time you login to the terminal
+
+there are several . files loaded in each shell session:
+
+.bash_profile
+.profile (main simple path to bin directory)
+.bshrc (set up for bash in fiji - prompts env etc)
+
+these default in different order depending on which type of shell you are connecting with.
+
+```{commands}
+nano .profile
+export PATH=$PATH:/home1/difeizhu/bin
+
+# type this command if nextflow is not automatically launched each time when start the terminal
+source ~/.profile 
+```
+
+check the nextflow: should see something like this
+```{commands}
+# difeizhu@discovery1 bin]$ nextflow -version
+#     N E X T F L O W
+#     version 23.04.2 build 5870
+#     created 08-06-2023 08:29 UTC (01:29 PDT)
+#     cite doi:10.1038/nbt.3820
+#     http://nextflow.io
+```
+
+
+For nextflow update
+```{commands}
+nextflow self-update
+```
+
