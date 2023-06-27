@@ -1,0 +1,55 @@
+==========================================
+SLURM_JOB_ID = 15474781
+SLURM_JOB_NODELIST = e17-19
+TMPDIR = /tmp/SLURM_15474781
+==========================================
+/scratch1/difeizhu/practice
+e17-19.hpc.usc.edu
+Mon Jun 26 19:29:12 PDT 2023
+Lets go
+N E X T F L O W  ~  version 23.04.2
+Launching `https://github.com/nf-core/chipseq` [stupefied_avogadro] DSL2 - revision: 6924b66942 [1.2.2]
+----------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/chipseq v1.2.2
+----------------------------------------------------
+
+Run Name            : stupefied_avogadro
+Data Type           : Single-End
+Design File         : design.csv
+Genome              : Not supplied
+Fasta File          : /scratch1/difeizhu/practice/gencode/GRCh38.p13.genome.fa
+GTF File            : /scratch1/difeizhu/practice/gencode/gencode.v32.annotation.gtf
+Blacklist BED       : /scratch1/difeizhu/practice/gencode/hg38-blacklist.v2.bed
+MACS2 Genome Size   : 3.2e9
+Min Consensus Reps  : 1
+MACS2 Narrow Peaks  : No
+MACS2 Broad Cutoff  : 0.1
+Trim R1             : 0 bp
+Trim R2             : 0 bp
+Trim 3' R1          : 0 bp
+Trim 3' R2          : 0 bp
+NextSeq Trim        : 0 bp
+Fragment Size       : 200 bp
+Fingerprint Bins    : 500000
+Save Genome Index   : No
+Max Resources       : 128 GB memory, 16 cpus, 10d time per job
+Container           : singularity - nfcore/chipseq:1.2.2
+Output Dir          : ./results
+Launch Dir          : /scratch1/difeizhu/practice
+Working Dir         : /scratch1/difeizhu/practice/work
+Script Dir          : /home1/difeizhu/.nextflow/assets/nf-core/chipseq
+User                : difeizhu
+Config Profile      : singularity
+E-mail Address      : difeizhu@usc.edu
+E-mail on failure   : false
+MultiQC Max Size    : 25 MB
+----------------------------------------------------
+ERROR ~ No such variable: ch_design_reads_csv
+
+ -- Check script '/home1/difeizhu/.nextflow/assets/nf-core/chipseq/main.nf' at line: 340 or see '.nextflow.log' file for more details
+Mon Jun 26 19:29:41 PDT 2023
