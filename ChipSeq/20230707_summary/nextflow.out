@@ -1,0 +1,1209 @@
+==========================================
+SLURM_JOB_ID = 15626719
+SLURM_JOB_NODELIST = e06-01
+TMPDIR = /tmp/SLURM_15626719
+==========================================
+/project/aealmada_561/judyz/practice
+e06-01.hpc.usc.edu
+Fri Jul  7 13:09:41 PDT 2023
+Lets go
+N E X T F L O W  ~  version 23.04.2
+Launching `https://github.com/nf-core/chipseq` [peaceful_brenner] DSL2 - revision: 51eba00b32 [2.0.0]
+
+WARN: Found unexpected parameters:
+* --single_end: true
+- Ignore this warning: params.schema_ignore_params = "single_end" 
+
+
+
+------------------------------------------------------
+                                        ,--./,-.
+        ___     __   __   __   ___     /,-._.--~'
+  |\ | |__  __ /  ` /  \ |__) |__         }  {
+  | \| |       \__, \__/ |  \ |___     \`-._,-`-,
+                                        `._,._,'
+  nf-core/chipseq v2.0.0
+------------------------------------------------------
+Core Nextflow options
+  revision       : 2.0.0
+  runName        : peaceful_brenner
+  containerEngine: singularity
+  launchDir      : /project/aealmada_561/judyz/practice
+  workDir        : /project/aealmada_561/judyz/practice/work
+  projectDir     : /home1/difeizhu/.nextflow/assets/nf-core/chipseq
+  userName       : difeizhu
+  profile        : singularity
+  configFiles    : /home1/difeizhu/.nextflow/assets/nf-core/chipseq/nextflow.config, /project/aealmada_561/judyz/practice/nextflow.config, /project/aealmada_561/judyz/practice/nextflow.config
+
+Input/output options
+  input          : design.csv
+  outdir         : /project/aealmada_561/judyz/practice
+  email          : difeizhu@usc.edu
+
+Reference genome options
+  genome         : GRCh38
+  fasta          : /project/aealmada_561/judyz/practice/gencode/GRCh38.p13.genome.fa
+  gtf            : /project/aealmada_561/judyz/practice/gencode/gencode.v32.annotation.gtf
+  bwa_index      : s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/BWAIndex/version0.6.0/
+  bowtie2_index  : s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/Bowtie2Index/
+  star_index     : s3://ngi-igenomes/igenomes/Homo_sapiens/NCBI/GRCh38/Sequence/STARIndex/
+  macs_gsize     : 3200000000
+  blacklist      : /project/aealmada_561/judyz/practice/gencode/hg38-blacklist.v2.bed
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+------------------------------------------------------
+If you use nf-core/chipseq for your analysis please cite:
+
+* The pipeline
+  https://doi.org/10.5281/zenodo.3240506
+
+* The nf-core framework
+  https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+  https://github.com/nf-core/chipseq/blob/master/CITATIONS.md
+------------------------------------------------------
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  slurm (2)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+ERROR ~ Error executing process > 'NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)'
+
+Caused by:
+  Process `NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)` terminated with an error exit status (1)
+
+Command executed:
+
+  check_samplesheet.py \
+      design.csv \
+      samplesheet.valid.csv
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK":
+      python: $(python --version | sed 's/Python //g')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  Control: 'ENCSR000BLH'
+
+Command error:
+  WARNING: Skipping mount /var/singularity/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+Work dir:
+  /project/aealmada_561/judyz/practice/work/a1/d8e2e92dbcc069210f8a41dd87c6e1
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+Execution cancelled -- Finishing pending tasks before exit
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+ERROR ~ Error executing process > 'NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)'
+
+Caused by:
+  Process `NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)` terminated with an error exit status (1)
+
+Command executed:
+
+  check_samplesheet.py \
+      design.csv \
+      samplesheet.valid.csv
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK":
+      python: $(python --version | sed 's/Python //g')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  Control: 'ENCSR000BLH'
+
+Command error:
+  WARNING: Skipping mount /var/singularity/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+Work dir:
+  /project/aealmada_561/judyz/practice/work/a1/d8e2e92dbcc069210f8a41dd87c6e1
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [  0%] 0 of 1
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+Pulling Singularity image https://depot.galaxyproject.org/singularity/samtools:1.15.1--h1170115_0 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-samtools-1.15.1--h1170115_0.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/perl:5.26.2 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-perl-5.26.2.img]
+Pulling Singularity image https://depot.galaxyproject.org/singularity/python:3.8.3 [cache /project/aealmada_561/judyz/practice/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img]
+Execution cancelled -- Finishing pending tasks before exit
+WARN: Singularity cache directory has not been defined -- Remote image will be stored in the path: /project/aealmada_561/judyz/practice/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+ERROR ~ Error executing process > 'NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)'
+
+Caused by:
+  Process `NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)` terminated with an error exit status (1)
+
+Command executed:
+
+  check_samplesheet.py \
+      design.csv \
+      samplesheet.valid.csv
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK":
+      python: $(python --version | sed 's/Python //g')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  Control: 'ENCSR000BLH'
+
+Command error:
+  WARNING: Skipping mount /var/singularity/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+Work dir:
+  /project/aealmada_561/judyz/practice/work/a1/d8e2e92dbcc069210f8a41dd87c6e1
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+
+
+
+
+
+ERROR ~ Error executing process > 'NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)'
+
+Caused by:
+  Process `NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)` terminated with an error exit status (1)
+
+Command executed:
+
+  check_samplesheet.py \
+      design.csv \
+      samplesheet.valid.csv
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK":
+      python: $(python --version | sed 's/Python //g')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  Control: 'ENCSR000BLH'
+
+Command error:
+  WARNING: Skipping mount /var/singularity/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+Work dir:
+  /project/aealmada_561/judyz/practice/work/a1/d8e2e92dbcc069210f8a41dd87c6e1
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+ERROR ~ Error executing process > 'NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)'
+
+Caused by:
+  Process `NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)` terminated with an error exit status (1)
+
+Command executed:
+
+  check_samplesheet.py \
+      design.csv \
+      samplesheet.valid.csv
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK":
+      python: $(python --version | sed 's/Python //g')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  Control: 'ENCSR000BLH'
+
+Command error:
+  WARNING: Skipping mount /var/singularity/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+Work dir:
+  /project/aealmada_561/judyz/practice/work/a1/d8e2e92dbcc069210f8a41dd87c6e1
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Failed to invoke `workflow.onComplete` event handler
+
+ -- Check script '/home1/difeizhu/.nextflow/assets/nf-core/chipseq/./workflows/chipseq.nf' at line: 737 or see '.nextflow.log' file for more details
+
+
+
+executor >  slurm (3)
+[3c/3053c0] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[4e/540c04] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... [100%] 1 of 1 ✔
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PREP... -
+[a1/d8e2e9] process > NFCORE_CHIPSEQ:CHIPSEQ:INPU... [100%] 1 of 1, failed: 1 ✘
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FAST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ALIG... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MARK... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FILT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PRES... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PICA... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PHAN... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:BEDT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:UCSC... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DEEP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:FRIP... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:PLOT... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MACS... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:HOME... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:ANNO... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:SUBR... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:DESE... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:IGV     [  0%] 0 of 1
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:CUST... -
+[-        ] process > NFCORE_CHIPSEQ:CHIPSEQ:MULTIQC -
+ERROR ~ Error executing process > 'NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)'
+
+Caused by:
+  Process `NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK (design.csv)` terminated with an error exit status (1)
+
+Command executed:
+
+  check_samplesheet.py \
+      design.csv \
+      samplesheet.valid.csv
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_CHIPSEQ:CHIPSEQ:INPUT_CHECK:SAMPLESHEET_CHECK":
+      python: $(python --version | sed 's/Python //g')
+  END_VERSIONS
+
+Command exit status:
+  1
+
+Command output:
+  ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  Control: 'ENCSR000BLH'
+
+Command error:
+  WARNING: Skipping mount /var/singularity/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+Work dir:
+  /project/aealmada_561/judyz/practice/work/a1/d8e2e92dbcc069210f8a41dd87c6e1
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+ -- Check '.nextflow.log' file for details
+ERROR ~ Failed to invoke `workflow.onComplete` event handler
+
+ -- Check script '/home1/difeizhu/.nextflow/assets/nf-core/chipseq/./workflows/chipseq.nf' at line: 737 or see '.nextflow.log' file for more details
+
+Fri Jul  7 13:11:45 PDT 2023

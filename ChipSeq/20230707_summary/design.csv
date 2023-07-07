@@ -1,0 +1,7 @@
+sample,fastq_1,fastq_2,antibody,control
+POLR2A_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNM.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNT.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP3,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWJ.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP4,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWR.fastq.gz,,POLR2A,ENCSR000EEN
+ENCSR000BLH_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000POQ.fastq.gz,,,
+ENCSR000EEN_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000XTF.fastq.gz,,,

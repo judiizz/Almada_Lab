@@ -1,0 +1,121 @@
+---
+title: "Week_7.3"
+output:
+  pdf_document: default
+  html_document: default
+---
+****************************************
+# 2023.7.6
+## Goal: debug chipseq, modify design.csv file
+
+Error from last time:
+* checked nextflow.out file *very long*
+  + ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  + Control: 'ENCSR000BLH'
+
+
+
+### New job 1
+
+Read the nf_core documentation
+* has to increment replicate from 1 to ...
+* for both sample and control
+
+Original design.csv
+```{bash}
+sample,fastq_1,fastq_2,antibody,control
+POLR2A_REP3,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWJ.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNT.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP4,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWR.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNM.fastq.gz,,POLR2A,ENCSR000BLH
+ENCSR000EEN_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000XTF.fastq.gz,,,
+ENCSR000BLH_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000POQ.fastq.gz,,,
+```
+
+Modified design.csv
+```{bash}
+sample,fastq_1,fastq_2,antibody,control
+POLR2A_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWJ.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNT.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP3,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWR.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP4,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNM.fastq.gz,,POLR2A,ENCSR000BLH
+ENCSR000EEN_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000XTF.fastq.gz,,,
+ENCSR000BLH_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000POQ.fastq.gz,,,
+```
+
+Deleted files and submitted job 1
+```{bash}
+sbatch run.sh
+```
+
+
+**Results**: failed :(
+
+* checked nextflow.out file
+  + ERROR: Please check samplesheet -> Control identifier has to match does a provided sample identifier!
+  + Control: 'ENCSR000EEN' *the control in the error this time is different*
+
+
+
+### New job 2
+
+Try to reorder the samples from 1 to 4
+
+Modified version of design.csv
+* reorder the samples 
+* number of control matches the number of sample
+```{bash}
+sample,fastq_1,fastq_2,antibody,control
+POLR2A_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNM.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNT.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP3,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWJ.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP4,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWR.fastq.gz,,POLR2A,ENCSR000EEN
+ENCSR000BLH_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000POQ.fastq.gz,,,
+ENCSR000BLH_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000POQ.fastq.gz,,,
+ENCSR000EEN_REP3,/project/aealmada_561/judyz/practice/fastq/ENCFF000XTF.fastq.gz,,,
+ENCSR000EEN_REP4,/project/aealmada_561/judyz/practice/fastq/ENCFF000XTF.fastq.gz,,,
+```
+
+
+Deleted files and submitted job 2
+```{bash}
+sbatch run.sh
+```
+
+While modifying the file: Error writing design.csv: Disk quota exceeded 
+* This error frequently occurs after I switched the directory to /project/aealmada_561
+* Current solution: just wait for ~10 min and this will disappear
+
+
+**Results**: failed :(
+* checked nextflow.out file: error was not fixed
+
+
+
+### New job 3
+
+Modified version of design.csv
+* Changed the control
+```{bash}
+sample,fastq_1,fastq_2,antibody,control
+POLR2A_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNM.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP2,/project/aealmada_561/judyz/practice/fastq/ENCFF000PNT.fastq.gz,,POLR2A,ENCSR000BLH
+POLR2A_REP3,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWJ.fastq.gz,,POLR2A,ENCSR000EEN
+POLR2A_REP4,/project/aealmada_561/judyz/practice/fastq/ENCFF000XWR.fastq.gz,,POLR2A,ENCSR000EEN
+ENCSR000BLH_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000POQ.fastq.gz,,,
+ENCSR000EEN_REP1,/project/aealmada_561/judyz/practice/fastq/ENCFF000XTF.fastq.gz,,,
+```
+
+
+Deleted files and submitted job 3
+```{bash}
+sbatch run.sh
+```
+
+
+**Results**: failed :(
+* checked nextflow.out file: error was not fixed
+
+
+
+
