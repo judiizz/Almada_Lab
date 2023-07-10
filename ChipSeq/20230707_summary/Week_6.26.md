@@ -236,7 +236,7 @@ sbatch run.sh
 * checked nextflow.out file
 
   + ERROR ~ Unable to read script: '/home1/difeizhu/.nextflow/assets/nf-core/chipseq/./workflows/chipseq.nf' -- cause: /scratch1/difeizhu/practice/gencode/GRCh38.p13.genome.fa
-*DARNNN i forgot to modify the file paths since i moved the folders yesterday!!*
+  *i forgot to modify the file paths since i moved the folders yesterday!!*
 
 
 
