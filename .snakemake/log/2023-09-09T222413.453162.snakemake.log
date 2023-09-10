@@ -1,0 +1,25 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job              count
+-------------  -------
+samtools_sort        1
+total                1
+
+Select jobs to execute...
+
+[Sat Sep  9 22:24:13 2023]
+rule samtools_sort:
+    input: mapped_reads/B.bam
+    output: sorted_reads/B.bam
+    jobid: 0
+    reason: Missing output files: sorted_reads/B.bam
+    wildcards: sample=B
+    resources: tmpdir=/tmp
+
+[Sat Sep  9 22:24:14 2023]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2023-09-09T222413.453162.snakemake.log
