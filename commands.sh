@@ -81,6 +81,7 @@ Judyzdf20030516#
 # step 6: calling genomic variants
 snakemake -s Snakefile_2.smk --core 1 plots/quals.svg
 
+<<<<<<< HEAD
 
 # step 7: adding a target rule
 # report shows the target rule triggered the job plot_quals
@@ -114,3 +115,6 @@ snakemake -s Snakefile_2.smk --forcerun sorted_reads/B.bam  --core 1 sorted_read
 # perform a dry-run -np that forces some rules to be reexecuted
 # report shows forced execution for rules bwa_map and
 snakemake -s Snakefile_2.smk -np mapped_reads/{A,B}.bam calls/all.vcf --forcerun mapped_reads/{A,B}.bam calls/all.vcf
+=======
+git push origin master
+>>>>>>> 965a80290f8946a1f6791ba92e644feef162856a
