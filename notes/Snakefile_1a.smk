@@ -10,6 +10,7 @@ rule bwa_map:
         "data/samples/A.fastq"
     
     # created by the rule: in this case, bwa and samtools creates a .bam file
+    # specify the new directory
     output:
         "mapped_reads/A.bam"
     
@@ -135,3 +136,75 @@ rule bcftools_call:
     shell:
         "bcftools mpileup -f {input.fa} {input.bam} | "
         "bcftools call -mv - > {output}"
+
+
+#*****************************************************************************************************
+
+# STEP 6: USING CUSTOM SCRIPTS
+# custom code to calculate summary statistics or create plots
+# include Python code inside
+# Snakemake script
+
+rule plot_quals:
+    input:
+        "calls/all.vcf"
+    output:
+        "plots/quals.svg"
+    script:
+        "scripts/plot-quals.py"
+
+# will generate a histogram of the quality scores that have been assigned to the variant calls
+# in the file calls/all.vcf
+# Python code to generate plot is in the script: scripts/plot-quals.py
+
+# CS concept: object and rule
+# snakemake is the global object, inside this object: input, output, wildcarcd... are attributes of the snakemake object
+# when in a separate file, these attributes are accessed by: snakemake.input and snakemake.output
+
+# list: snakemake.input and snakemake.output contain a list of file names
+# to refer a particular file name: snakemake.output[0] gives the first element
+
+# in file scripts/plot-quals.py, separated from workflow .smk
+# Python syntax
+# invoked from workflow, can be shared from workflows
+    # like C++ helper functions in the .h file
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+from pysam import VariantFile
+
+quals = [record.qual for record in VariantFile(snakemake.input[0])]
+plt.hist(quals)
+
+plt.savefig(snakemake.output[0])
+
+# also possible to use R scripts !!!!
+# S4 object named snakemake analogous to python
+snakemake@input[[1]] # the first file
+snakemake@input[["myfile"]]
+
+
+
+
+#*****************************************************************************************************
+# STEP 7: ADDING A TARGET RULE
+# Snakemake accepts rule names as targets if the requested rule does not have wildcarcd
+# write target rules collecting particular subsets of the desired results or all results
+# if no target is given at the command line, Snakemake will define the first rule as the target
+
+# have a rule all at the top of the workflow, which has all typically desired target files as input files
+# trigger the rule to generate this input
+rule all:
+    input:
+        "plots/quals.svg"
+
+# could add multiple target rules at the top of the snakefile
+# by default (no specification) snakemake execute the first
+# specification: snakemake -n mytarget
+
+# apart from the first rule of worflow as the default target, the order of rules in the Snakemake
+# is arbitary, does not influence the DAG
+
+
+
+

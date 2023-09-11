@@ -76,9 +76,41 @@ snakemake -s Snakefile_2.smk --core 1 calls/all.vcf
 # obtain the DAG for the file calls/all.vcf
 snakemake -s Snakefile_2.smk --dag calls/all.vcf | dot -Tsvg > dag_2.svg
 
-git remote set-url origin git@github.com:judiizz/Almada_Lab.git
-git init
+Judyzdf20030516#
 
-git remote add origin https://github.com/judiizz/Almada_Lab.git
+# step 6: calling genomic variants
+snakemake -s Snakefile_2.smk --core 1 plots/quals.svg
 
-git push origin master
+
+# step 7: adding a target rule
+# report shows the target rule triggered the job plot_quals
+# report shows two jobs: plot_quals and all, plot_quals is triggered by all
+snakemake -s Snakefile_2.smk -n
+
+
+
+# EXERCISE
+
+# Create the DAG for the complete workflow
+snakemake -s Snakefile_2.smk --dag plots/quals.svg | dot -Tsvg > dag_comp.svg
+
+
+# execute the complete workflow and have a look at the resulting plot/quals.svg
+snakemake -s Snakefile_2.smk --core 1 plots/quals.svg
+
+
+# Snakemake provides handy flags for forcing re-execution of parts of the workflow
+# Have a look at the command line help with snakemake --help and search for the flag --forcerun
+    #  Force the re-execution or creation of the given rules or files. Use this option
+    #  if you changed a rule and want to have all its output in your workflow updated.
+# use this flag to re-execute the rule samtools_sort and see what happens
+    # report shows forced execution
+
+snakemake -s Snakefile_2.smk --forcerun sorted_reads/B.bam  --core 1 sorted_reads/B.bam 
+
+
+
+# Snakemake display the reason for each job (under reason:)
+# perform a dry-run -np that forces some rules to be reexecuted
+# report shows forced execution for rules bwa_map and
+snakemake -s Snakefile_2.smk -np mapped_reads/{A,B}.bam calls/all.vcf --forcerun mapped_reads/{A,B}.bam calls/all.vcf
