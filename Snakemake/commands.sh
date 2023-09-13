@@ -81,8 +81,6 @@ Judyzdf20030516#
 # step 6: calling genomic variants
 snakemake -s Snakefile_2.smk --core 1 plots/quals.svg
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 # step 7: adding a target rule
 # report shows the target rule triggered the job plot_quals
@@ -116,9 +114,37 @@ snakemake -s Snakefile_2.smk --forcerun sorted_reads/B.bam  --core 1 sorted_read
 # perform a dry-run -np that forces some rules to be reexecuted
 # report shows forced execution for rules bwa_map and
 snakemake -s Snakefile_2.smk -np mapped_reads/{A,B}.bam calls/all.vcf --forcerun mapped_reads/{A,B}.bam calls/all.vcf
-=======
-git push origin master
->>>>>>> 965a80290f8946a1f6791ba92e644feef162856a
-=======
-git push origin master
->>>>>>> 965a80290f8946a1f6791ba92e644feef162856a
+
+
+
+
+
+################################################
+# ADVANCED features
+
+# STEP 1: specifying the threads
+snakemake --cores 10
+
+# use --forceall to enforce a complete re-execution of the workflow
+    # execution of the selected (or the first) rule and all rules it is dependent on regardless of already created output.
+# coombine with different values for --cores
+    # the threads = 8 is specified in the rule bwa_map
+snakemake -s Snakemake_adv.smk --core 10 --forceall plots/quals.svg 
+# bwa_map: 0.504, no B
+
+
+# more cores
+snakemake -s Snakemake_adv.smk --core 50 --forceall plots/quals.svg 
+# bwa_map: A and B 0.864
+
+# more cores
+snakemake -s Snakemake_adv.smk --core 100 --forceall plots/quals.svg 
+# bwa_map: A and B 0.764
+
+# result: adding more cores than threads could perform more tasks?
+
+
+
+# STEP 2: config files
+# functioned well
+snakemake -s Snakemake_adv.smk --core 50 --forceall plots/quals.svg 

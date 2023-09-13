@@ -1,0 +1,24 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job           count
+----------  -------
+plot_quals        1
+total             1
+
+Select jobs to execute...
+
+[Tue Sep 12 22:45:20 2023]
+rule plot_quals:
+    input: calls/all.vcf
+    output: plots/quals.svg
+    jobid: 0
+    reason: Missing output files: plots/quals.svg
+    resources: tmpdir=/tmp
+
+[Tue Sep 12 22:45:22 2023]
+Finished job 0.
+1 of 1 steps (100%) done
+Complete log: .snakemake/log/2023-09-12T224520.447562.snakemake.log
