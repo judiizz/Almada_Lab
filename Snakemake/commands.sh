@@ -148,3 +148,14 @@ snakemake -s Snakemake_adv.smk --core 100 --forceall plots/quals.svg
 # STEP 2: config files
 # functioned well
 snakemake -s Snakemake_adv.smk --core 50 --forceall plots/quals.svg 
+
+
+# STEP 3: input functions
+snakemake -s Snakemake_adv.smk --core 50 --forceall plots/quals.svg 
+
+
+# exercise: add C.fastq to the config file
+# snakemake does not automatically rerun jobs when new input files are added
+# use this command to get output files that are affected 
+# result: C added, number of job increase
+snakemake -s Snakemake_adv.smk --core 50 --forceall plots/quals.svg 

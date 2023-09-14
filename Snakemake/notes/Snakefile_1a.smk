@@ -123,6 +123,7 @@ SAMPLES = ["A", "B"]
 rule bcftools_call:
 
     # specifying names for input or output files
+    # expand could collect multiple input files
     input:
         fa="data/genome.fa",
         bam=expand("sorted_reads/{sample}.bam", sample=SAMPLES),
